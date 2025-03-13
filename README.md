@@ -13,16 +13,16 @@ existing threads. Have fun!
 
 #### Design
 
-## Login Page
+#### Login Page
 <img src="readme-images/login-page.png" alt="Login Page" width="400">
 
-## Discussion Page
+#### Discussion Page
 <img src="readme-images/discussion-page.png" alt="Discussion Page" width="400">
 
-## Create Thread Page
+#### Create Thread Page
 <img src="readme-images/create-thread-page.png" alt="Create Thread Page" width="400">
 
-## User Profile Page
+#### User Profile Page
 <img src="readme-images/user-profile-page.png" alt="User Profile Page" width="400">
 
 
