@@ -1,6 +1,6 @@
 ## Rant & Chill
 
-A little side project experimenting with frontend development. This is a fun discussion community forum that lets anyone and everyone chat about anything. Create an account and customise your profile by adding a profile pic :) Start a thread or comment on other 
+A little side project experimenting with frontend and backend development. This is a fun discussion community forum that lets anyone and everyone chat about anything. Create an account and customise your profile by adding a profile pic :) Start a thread or comment on other 
 existing threads. Have fun! 
 
 #### Feature include
