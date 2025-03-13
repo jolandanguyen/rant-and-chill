@@ -10,6 +10,16 @@ existing threads. Have fun!
 * like and reply to comments
 * edit or delete your thread
 
+
+![Project Image](readme-images/login-page.png)
+
+![Project Image](readme-images/discussion-page.png)
+
+![Project Image](readme-images/create-thread-page.png)
+
+![Project Image](readme-images/user-profile-page.png)
+
+
 #### Instructions
 In the rac-frontend folder, run `npx http-server frontend -c 1 -p 8080`
 
