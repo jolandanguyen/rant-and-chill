@@ -12,6 +12,7 @@ existing threads. Have fun!
 
 #### Instructions
 In the rac-frontend folder, run `npx http-server frontend -c 1 -p 8080`
+
 In the rac-backend folder, run `npm start`
 
 
