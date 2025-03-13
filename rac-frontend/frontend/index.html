@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rant&Chill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles and scripts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/login.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/register.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/error.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/thread.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/dashboard.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/comments.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/sidebar.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/mainThread.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/editThread.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/userProfile.css" />
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div id="logo-heading">
+                <button id="site-logo">Rant&Chill</button>
+                <h2 id="nav-subheading">Discussion Forum</h2>
+            </div>
+            <img class="nav-btn" id="nav-logout" src="assets/logout.svg">
+        </nav>
+    </header>
+    <header id="header-menu">
+        <nav id="nav-menu">
+            <img class="nav-btn" id="nav-sidebar-btn" src="assets/menuSideBar.svg">
+            <div id="nav-menu-right">
+                <button class="nav-btn" id="create-btn">Create</button>
+                <button class="nav-btn" id="user-profile-btn">My Profile</button>
+                <button class="nav-btn" id="nav-login-signup">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main role="main">
+        <div id="page-container">
+            <!-- Login Page -->
+            <div id="login-page">
+                <div id="login-container">
+                    <h5 id="login-title">Login</h5>
+                    <p id="login-text">Log in to continue </p>
+                    <p class="login-input-names">Email</p>
+                    <input class="login-input" id="login-email" type="text" placeholder="Email"> <br>
+                    <p class="login-input-names">Password</p>
+                    <input class="login-input" id="login-password" type="password" placeholder="Password"><br>
+                    <button class="submit-btn" id="login-btn">Log In</button>
+                    <p id="text">Don't have an account?</p>
+                    <a id="register-link" href="">Register Here</a><br>
+                </div>
+            </div>
+
+            <!-- Registation Page -->
+            <div id="register-page">
+                <div id="register-container">
+                    <h5 id="register-title">Sign Up</h5>
+
+                    <p class="register-input-names">Name</p>
+                    <input class="register-input" id="register-name" type="text" placeholder="Full Name"> <br>
+                    <p class="register-input-names">Email</p>
+                    <input class="register-input" id="register-email" type="text" placeholder="Email"> <br>
+                    <p class="register-input-names">Password</p>
+                    <input class="register-input" id="register-password" type="password" placeholder="Password"><br>
+                    <p class="register-input-names">Confirm Password</p>
+                    <input class="register-input" id="register-conf-password" type="password"
+                        placeholder="Confirm Password"><br>
+                    <button class="signup-btn" id="signup-btn">Sign Up</button>
+                    <p id="text">Already have an account?</p>
+                    <a id="login-link" href="">Login</a><br>
+                </div>
+            </div>
+
+            <!-- Dashboard Page -->
+            <div id="dashboard-page">
+                <div id="main-page-container">
+                    <div id="left-side-bar">
+                        <div id="create-thread-container">
+                            <h3>Have a Question?</h3>
+                            <p id="side-bar-text">Start by creating a new thread!</p>
+                            <button id="side-bar-create">Create</button>
+                        </div>
+                        <div id="display-threads-container">
+                            <h3>Recent Posts</h3>
+                            <div id="threads-list-container"></div>
+
+                            <button id="show-more-threads">See More...</button>
+
+                        </div>
+                    </div>
+                    <div id="contents-container">
+                        <div id="individual-thread-container">
+
+                            <div id="individual-thread-display-screen">
+                                <div id="thread-header-main-container">
+                                    <p id="thread-name"></p>
+                                    <button class="unwatched" id="watch-btn">Watch</button>
+                                    <button id="edit-btn">Edit</button>
+                                </div>
+                                <div id="author-details">
+                                    <img class="author-profile-overlay" id="author-picture" src="" alt="pic">
+                                    <p id="thread-post-author"></p>
+                                </div>
+                                <div id="thread-body-container">
+                                    <p id="thread-body"></p>
+                                </div>
+                                <div id="thread-footer-container">
+                                    <div id="like-items">
+                                        <img class="unliked" id="like-btn" src="assets/heartIconUnliked.svg"
+                                            alt="heart-icon">
+                                        <!-- <button class="unliked" id="like-btn">Like</button> -->
+                                        <p id="thread-like-count"></p>
+                                    </div>
+                                    <!-- <button id="edit-btn">Edit</button> -->
+                                </div>
+                            </div>
+
+                            <div id="individual-thread-edit-screen">
+                                <input type="text" id="edit-title">
+                                <textarea id="edit-body"></textarea>
+                                <div id="edit-checkbox-options">
+                                    <span class="edit-option-container">
+                                        <p class="edit-option-label">Private</p>
+                                        <input type="checkbox" id="private-checkbox-edit">
+                                    </span>
+                                    <span class="edit-option-container">
+                                        <p class="edit-option-label">Lock</p>
+                                        <input type="checkbox" id="lock-checkbox-edit">
+                                    </span>
+                                </div>
+                                <div id="edit-submit-options">
+                                    <button id="delete-btn">Delete</button>
+                                    <button id="save-btn">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="comments-container">
+                            <h3>Comments</h3>
+                            <p id="empty-comment-list">No Comments</p>
+                            <div id="comment-list-container"></div>
+                            <div id="comment-input-container">
+                                <textarea id="new-comment-input" placeholder="Add a comment..."></textarea>
+                                <button id="comment-submit">Comment</button>
+
+                            </div>
+
+                            <!-- 
+                            <div class="comment-item">
+                                <img class="comment-profile" src="" alt="">
+                                <div class="comment-body">
+                                    <div class="comment-item-header">
+                                        <p>
+                                            <span class="comment-item-username"></span>
+                                            <span class="comment-item-time-posted"></span>
+                                        </p>
+                                    </div>
+                                    <p class="comment-item-text"></p>
+                                    <div class="comment-item-like">
+                                        count 
+                                        button
+                                        reply
+                                    </div>
+                                </div>
+                                <button class="comment-item-menu"></button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Thread -->
+            <div id="create-thread-page">
+                <div id="new-thread-container">
+                    <div id="thread-header-container">
+                        <p id="thread-header">New Thread</p>
+                    </div>
+
+                    <!-- <div id="thread-title-box"> -->
+                    <input id="thread-title" type="text" placeholder="Title..."><br>
+                    <!-- </div> -->
+
+                    <div id="thread-body-container">
+
+                        <textarea id="thread-content" placeholder="Enter your thread here ..."></textarea>
+                    </div>
+                    <div id="submission-container">
+                        <div id="private-container">
+                            <p id="private-text">Private</p>
+                            <input type="checkbox" id="private-checkbox">
+
+                        </div>
+                        <button id="post-thread-btn">Post</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Profile  -->
+            <div id="user-profile-page">
+                <div class="user-info-container">
+                    <img src="" alt="" id="user-profile-image" class="profile-image">
+                    <div id="user-details-container">
+
+                        <!-- <img src="" alt="" id="user-profile-image" class="profile-image"> -->
+                        <h6 class="profile-detail-label">Name:</h6>
+                        <p id="user-profile-name"></p>
+                        <h6 class="profile-detail-label">Email:</h6>
+                        <p id="user-profile-email"></p>
+                        <h6 class="profile-detail-label">Role:</h6>
+                        <p id="user-profile-admin"></p>
+
+                        <div id="admin-dropdown-container">
+                            <label id="admin-set-label" for="admin-setting"></label>
+                            <select name="admin-setting" id="admin-set">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="is-user">User</option>
+                                <option value="is-admin">Admin</option>
+                            </select>
+                        </div>
+                        <!-- <button id="edit-profile">Edit</button> -->
+                        <img src="assets/editButton.svg" alt="edit" id="edit-profile">
+                        <button id="save-profile">Save Changes</button>
+
+                    </div>
+                    <div id="user-threads-container">
+                    </div>
+                </div>
+            </div>
+            <!-- Error Popup -->
+            <div id="error-popup" style="display: none;" role="alert">
+                <div id="error-overlay">
+                    <div id="error-container">
+                        <p id="error-title">Error</p>
+                        <p id="error-message"></p>
+                        <button id="error-close">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <p id="footer-note">&copy; qanda.com 2025</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/auth.js"></script>
+</body>
+
+</html>

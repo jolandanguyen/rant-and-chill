@@ -1,0 +1,182 @@
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+
+}
+
+#user-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20%;
+
+}
+
+#user-threads-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    gap: 5%;
+    margin-top: 20px;
+}
+
+
+.user-thread-list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.profile-detail-label {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#user-profile-name,
+#user-profile-email {
+    font-size: clamp(14px, 1.5vw, 16px);
+    margin-bottom: 10px;
+}
+
+#user-profile-image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#edit-profile {
+    height: clamp(20px, 3vw, 30px);
+    width: clamp(30px, 4.5vw, 70px);
+}
+
+#save-profile {
+    height: clamp(30px, 5vw, 45px);
+    width: clamp(150px, 15vw, 170px);
+    transition: background-color 0.2s ease;
+    font-size: clamp(14px, 1.5vw, 16px);
+    border-radius: 8px;
+    color: #686868;
+    background-color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px;
+}
+
+#save-profile {
+    background-color: #3985d6;
+    color: white;
+}
+
+#input-file-btn {
+    text-align: center;
+    color: #3985d6;
+    background-color: white;
+    border: 1px solid #3985d6;
+    font-size: clamp(14px, 1.5vw, 16px);
+    padding: 10px 10px;
+    width: clamp(100px, 16vw, 200px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+#input-file-btn:hover {
+    transform: scale(1.1);
+}
+
+.edit-input {
+    max-width: 200px;
+}
+
+#admin-set {
+    appearance: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 80%;
+    text-align: center;
+    color: #3985d6;
+    border: 1px solid #3985d6;
+    border-radius: 15px;
+    font-size: clamp(14px, 1.5vw, 16px);
+    font-weight: lighter;
+}
+
+
+#admin-dropdown-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #3985d6;
+}
+
+#admin-set-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#user-profile-thread-header {
+    font-size: clamp(14px, 1.5vw, 16px);
+    margin-bottom: 15px;
+}
+
+.user-thread-list-item-title,
+.user-thread-list-item-body {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.user-thread-list-item-title {
+    font-weight: 500;
+}
+
+.user-thread-list-item-details {
+    display: flex;
+    gap: 5%;
+    color: rgb(153, 153, 153);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .user-info-container {
+        width: 100%;
+    }
+}

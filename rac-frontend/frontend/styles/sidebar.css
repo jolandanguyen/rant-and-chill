@@ -1,0 +1,118 @@
+#side-bar-text {
+    font-weight: 200;
+    font-size: clamp(0.65rem, 1.3vw, 0.975rem);
+}
+
+#side-bar-create {
+    display: block;
+    height: 45px;
+    width: 180px;
+    background-color: #3985d6;
+    color: white;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    margin: 0 auto;
+    margin-top: 27px;
+    border-radius: 8px;
+}
+
+#side-bar-create:hover {
+    background-color: #34679e;
+    cursor: pointer;
+}
+
+#side-bar-create:active {
+    background-color: #505050
+}
+
+#threads-list-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+ul {
+    border-top: 1px solid rgb(219, 219, 219);
+    padding-top: 15px;
+}
+
+.thread-item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-left: 1vw;
+    padding-bottom: 10px;
+    background-color: #f5f5f5dc;
+    transition: background-color 0.3s ease;
+}
+
+.thread-item:hover {
+    background-color: #dcdcdcdc;
+}
+
+.active {
+    background-color: #ebf3fb
+}
+
+.thread-title {
+    font-size: clamp(0.65rem, 1.3vw, 0.975rem);
+}
+
+.thread-date {
+    font-size: clamp(0.65rem, 1.3vw, 0.975rem);
+    color: rgb(153, 153, 153);
+}
+
+.thread-author {
+    font-size: clamp(0.65rem, 1.3vw, 0.975rem);
+    font-weight: 300;
+
+
+}
+
+.thread-likes {
+    font-size: clamp(0.6rem, 1.2vw, 0.9rem);
+    color: rgb(153, 153, 153);
+    font-weight: light;
+}
+
+#show-more-threads {
+    display: block;
+    height: 45px;
+    width: 180px;
+    color: #3985d6;
+    background-color: white;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.2s ease;
+    margin: 0 auto;
+    margin-top: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 999px) {
+
+    .thread-title {
+        font-size: 14px;
+    }
+
+    .thread-date {
+        font-size: 12px;
+        color: rgb(153, 153, 153);
+    }
+
+    .thread-author {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .thread-likes {
+        font-size: 12px;
+        color: rgb(153, 153, 153);
+        font-weight: light;
+    }
+}

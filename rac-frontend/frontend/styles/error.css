@@ -1,0 +1,49 @@
+#error-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#error-container {
+    height: 250px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding: 0;
+    border: 2px solid;
+    border-color: rgb(126, 126, 126);
+}
+
+#error-title {
+    font-size: 25px;
+    padding: 0;
+}
+
+#error-message {
+    font-size: 17px;
+    font-weight: 400;
+    padding: 0;
+}
+
+#error-close {
+    width: 90%;
+    height: 70px;
+    margin-top: 20px;
+    font-size: 22px;
+    background-color: rgba(241, 68, 68, 0.865);
+    color: white;
+    border: none;
+}
+
+#error-close:hover {
+    background-color: rgba(196, 62, 62, 0.865);
+}

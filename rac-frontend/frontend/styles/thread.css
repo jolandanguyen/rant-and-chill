@@ -1,0 +1,156 @@
+#new-thread-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 60%;
+    align-items: center;
+}
+
+#thread-header-container {
+    display: flex;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#thread-header {
+    font-weight: light;
+    font-size: clamp(16px 1.9vw 20px);
+    margin: 0 auto;
+    padding: 15px 0;
+    color: rgb(63, 63, 63)
+}
+
+#thread-title-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#thread-title-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#title-input {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+    height: 90%;
+    font-weight: normal;
+    color: rgb(79, 79, 79)
+}
+
+#thread-title {
+    width: 100%;
+    font-size: 20px;
+    flex-grow: 1;
+    border: none;
+    background-color: #f2f2f2;
+    padding: 10px 28px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    margin: 10px 50px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+
+#thread-title,
+#thread-content {
+    color: rgb(39, 39, 39);
+    font-weight: 300;
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+input#thread-title::placeholder,
+textarea#thread-content::placeholder {
+    font-weight: lighter;
+    color: rgb(161, 161, 161);
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+
+
+
+#thread-content {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: clamp(14px, 1.5vw, 16px);
+    resize: none;
+    padding: 20px;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+}
+
+textarea#thread-content::placeholder {
+    font-size: clamp(14px, 1.5vw, 16px);
+}
+
+#submission-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 90%;
+    align-items: center;
+}
+
+
+#private-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#private-checkbox {
+    margin-left: 15px;
+}
+
+#post-thread-btn {
+    font-size: medium;
+    background-color: #3985d6;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#post-thread-btn:hover {
+    background-color: #34679e;
+    cursor: pointer;
+}
+
+#post-thread-btn:active {
+    background-color: #505050
+}
+
+#private-text {
+    color: rgb(79, 79, 79)
+}
+
+@media (max-width:768px) {
+    #new-thread-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #thread-title {
+        margin: 0;
+        width: 100%;
+    }
+}
