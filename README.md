@@ -11,13 +11,20 @@ existing threads. Have fun!
 * edit or delete your thread
 
 
-![Project Image](readme-images/login-page.png)
+#### Design
 
-![Project Image](readme-images/discussion-page.png)
+## Login Page
+<img src="readme-images/login-page.png" alt="Login Page" width="400">
 
-![Project Image](readme-images/create-thread-page.png)
+## Discussion Page
+<img src="readme-images/discussion-page.png" alt="Discussion Page" width="400">
 
-![Project Image](readme-images/user-profile-page.png)
+## Create Thread Page
+<img src="readme-images/create-thread-page.png" alt="Create Thread Page" width="400">
+
+## User Profile Page
+<img src="readme-images/user-profile-page.png" alt="User Profile Page" width="400">
+
 
 
 #### Instructions
